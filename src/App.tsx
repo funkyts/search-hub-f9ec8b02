@@ -17,6 +17,8 @@ import Contact from "./pages/Contact";
 import Guide from "./pages/Guide";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import CategoryPage from "./pages/CategoryPage";
+import NeighborhoodPage from "./pages/NeighborhoodPage";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/clinic/:slug" element={<ClinicDetail />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/category/:slug" element={<CategoryPage />} />
+          <Route path="/neighborhood/:slug" element={<NeighborhoodPage />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
