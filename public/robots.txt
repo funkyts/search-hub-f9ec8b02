@@ -12,3 +12,13 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://bestskincareinkorea.com/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin
+Disallow: /admin/*
+
+# Crawl-delay for politeness
+Crawl-delay: 1
